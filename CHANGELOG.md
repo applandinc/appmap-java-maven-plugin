@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/applandinc/appmap-maven-plugin/compare/v1.2.0...v1.2.1) (2021-09-29)
+
+
+### Bug Fixes
+
+* Allow spaces in javaagent path ([d44cdda](https://github.com/applandinc/appmap-maven-plugin/commit/d44cddad9bbb49e403b2b1a8049f519fd73f8c36))
+
 # [1.2.0](https://github.com/applandinc/appmap-maven-plugin/compare/v1.1.2...v1.2.0) (2021-08-10)
 
 
