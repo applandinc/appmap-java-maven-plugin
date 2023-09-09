@@ -1,17 +1,17 @@
 package com.appland.appmap.maven;
 
 
-import org.apache.commons.text.StringEscapeUtils;
-import org.apache.maven.plugins.annotations.LifecyclePhase;
-import org.apache.maven.plugins.annotations.Mojo;
-import org.apache.maven.plugins.annotations.Parameter;
+import static java.lang.String.format;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static java.lang.String.format;
+import org.apache.commons.text.StringEscapeUtils;
+import org.apache.maven.plugins.annotations.LifecyclePhase;
+import org.apache.maven.plugins.annotations.Mojo;
+import org.apache.maven.plugins.annotations.Parameter;
 
 /**
  * Goal that adds appmap.jar to JVM execution as javaagent,
@@ -28,7 +28,7 @@ public class LoadJavaAppMapAgentMojo extends AppMapAgentMojo {
     protected boolean skip = false;
 
     @Parameter(property = "project.outputDirectory")
-    protected File outputDirectory = new File("target/appmap");
+    protected File outputDirectory = new File("tmp/appmap");
 
     @Parameter(property = "project.configFile")
     protected String configFile = DEFAULT_CONFIG_FILE;
@@ -37,7 +37,7 @@ public class LoadJavaAppMapAgentMojo extends AppMapAgentMojo {
     protected String debug = "info";
 
     @Parameter(property = "project.debugFile")
-    protected File debugFile = new File("target/appmap/agent.log");
+    protected File debugFile = new File(outputDirectory, "agent.log");
 
     @Parameter(property = "project.eventValueSize")
     protected Integer eventValueSize = 1024;
