@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/getappmap/appmap-maven-plugin/compare/v1.2.1...v1.3.0) (2023-09-13)
+
+
+### Features
+
+* use tmp/appmap as default output directory ([c2a0dc6](https://github.com/getappmap/appmap-maven-plugin/commit/c2a0dc6ab46c88548ab2a497d0d95cc2ae2005ef))
+
 ## [1.2.1](https://github.com/applandinc/appmap-maven-plugin/compare/v1.2.0...v1.2.1) (2021-09-29)
 
 
